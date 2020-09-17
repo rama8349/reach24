@@ -1,0 +1,9 @@
+<h1>Shorting the Logn URL</h1>
+<div class="md-col-12">
+<fieldset>
+	<%= simple_form_for @short_url do |f| %>
+	<%=f.input :original_url,hint:'Enter the URL' %>
+	<%=f.submit%>
+	<%end%>
+	</fieldset>
+</div>

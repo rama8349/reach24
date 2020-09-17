@@ -1,0 +1,15 @@
+<h1>URL Details</h1>
+
+	<table class="border:1">
+		<tr>
+			<th>Original URL</th>
+			<th>Short URL</th>	
+		</tr>
+		<tr>
+			<%@short_urls.each do  |s|%>
+			<td><%=s.original_url%></td>
+			<td><%=s.short_url%></td>
+			<%end%>
+		</tr>
+	</table>
+<p><%=link_to "New URL",  new_short_url_path %></p>

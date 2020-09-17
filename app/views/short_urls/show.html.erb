@@ -1,0 +1,12 @@
+<h1>Show URL details</h1>
+<div>
+<fieldset>
+	<table>
+	<tr>
+		<td>Original URL: <b><%=@short_url.original_url%></b></td><br >
+	</tr
+	<tr><td>Short URL:<b><%=@short_url.short_url%></b></td></tr>
+	</table>
+	</fieldset>
+</div>
+<%=link_to "New URL",  new_short_url_path %>
